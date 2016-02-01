@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DC7E582D-525C-2272-EA6D-678E8EB9FD9E" name="ratings">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 05:26:45 UTC</createdTime>
+<ownerDesignName>taxixpress</ownerDesignName>
+<engineerTo>
+<item key="6F3FB4F7-8B36-4439-7A62-B35EC6CA0287" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_rating" id="EAFAEB16-BD5D-115B-1A4B-AF1324585A1A">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 05:26:54 UTC</createdTime>
+<ownerDesignName>taxixpress</ownerDesignName>
+<engineerTo>
+<item key="6F3FB4F7-8B36-4439-7A62-B35EC6CA0287" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_assignment" id="6F28D725-FAE8-FAE0-FDBE-F3EBDD7067BC">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 06:14:14 UTC</createdTime>
+<generatorID>18FA3010-FCBA-E21A-AD04-50C3EB4532A0</generatorID>
+<ownerDesignName>taxixpress</ownerDesignName>
+<engineerTo>
+<item key="6F3FB4F7-8B36-4439-7A62-B35EC6CA0287" value="true"/>
+</engineerTo>
+<referedAttribute>0F05A129-CEF5-1D70-146B-C5E881E2EAFD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="value" id="F297F9B4-DA39-4179-8F57-74AE79156E11">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 05:49:00 UTC</createdTime>
+<comment>1=&gt; No me ha gustado nada&lt;br/&gt;2=&gt; No me ha gustado&lt;br/&gt;3=&gt; Está bien&lt;br/&gt;4=&gt; Me ha gustado&lt;br/&gt;5=&gt; Me ha encantado</comment>
+<commentInRDBMS>1=&gt; No me ha gustado nada&lt;br/&gt;2=&gt; No me ha gustado&lt;br/&gt;3=&gt; Está bien&lt;br/&gt;4=&gt; Me ha gustado&lt;br/&gt;5=&gt; Me ha encantado</commentInRDBMS>
+<ownerDesignName>taxixpress</ownerDesignName>
+<engineerTo>
+<item key="6F3FB4F7-8B36-4439-7A62-B35EC6CA0287" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_create" id="BA16038E-2AD9-6BE8-ABB9-C7365C242559">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 05:31:33 UTC</createdTime>
+<ownerDesignName>taxixpress</ownerDesignName>
+<engineerTo>
+<item key="6F3FB4F7-8B36-4439-7A62-B35EC6CA0287" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_update" id="4AAEF55A-F304-0ABA-4EA7-09C61B67AD54">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 05:31:33 UTC</createdTime>
+<ownerDesignName>taxixpress</ownerDesignName>
+<engineerTo>
+<item key="6F3FB4F7-8B36-4439-7A62-B35EC6CA0287" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="13CFF70D-DED3-7821-C53A-C289110C1A26" name="ratings PK">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 05:27:05 UTC</createdTime>
+<ownerDesignName>taxixpress</ownerDesignName>
+<engineerTo>
+<item key="6F3FB4F7-8B36-4439-7A62-B35EC6CA0287" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EAFAEB16-BD5D-115B-1A4B-AF1324585A1A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

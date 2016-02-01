@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FCD81333-8F2E-530B-F909-4A81F276411B" containerWithKeyObject="D48CF54F-1883-E7AB-21E1-FD11A8853E26" localFKIndex="175DB344-346E-5B9F-1998-3C9DF2D7F96F" name="taxi_drivers_taxis_fk">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 06:29:27 UTC</createdTime>
+<generatorID>2209EE16-357E-D419-DF08-1645122A2496</generatorID>
+<ownerDesignName>taxixpress</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DE5BF81F-07BD-61A4-D9D6-1F02DDA7A66C</referredTableID>
+<keyObject>A43587AD-7E70-3D30-E9E9-689AB1A0171A</keyObject>
+<referredKeyID>A43587AD-7E70-3D30-E9E9-689AB1A0171A</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

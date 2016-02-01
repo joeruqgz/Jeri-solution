@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BD158862-EEC6-58CC-FD99-EF64DEB58D4D" name="travels">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 06:29:27 UTC</createdTime>
+<generatorID>770F38DF-6D39-7793-EA0D-5B9465FF226E</generatorID>
+<ownerDesignName>taxixpress</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_travel" id="7F0903CC-38D6-54E6-C87A-FAF80943CF15">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 06:29:27 UTC</createdTime>
+<generatorID>3FDBF8F6-E113-BF0E-63D5-96A8021F7F8D</generatorID>
+<ownerDesignName>taxixpress</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="location_start" id="D83343EF-07B4-0391-F251-BB8908220939">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 06:29:27 UTC</createdTime>
+<generatorID>3C3591DA-50C2-6A79-D391-E73DB6E6BC74</generatorID>
+<ownerDesignName>taxixpress</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="location_end" id="C20B5FE1-836C-9250-EA57-D3B64216F437">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 06:29:27 UTC</createdTime>
+<generatorID>43E155E7-41EB-0D24-C4C9-743125736723</generatorID>
+<ownerDesignName>taxixpress</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type_pay" id="52A068E0-D2CA-FC93-E068-58AAA3B90730">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 06:29:27 UTC</createdTime>
+<comment>1=&gt;Efectivo&lt;br/&gt;2=&gt;Tarjeta</comment>
+<generatorID>EB51E7CF-1B62-74F7-9CCA-86F5FDC52E6E</generatorID>
+<ownerDesignName>taxixpress</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cost" id="0DB78A48-0BCE-C88E-1EEE-C98DDD83F0FD">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 06:29:27 UTC</createdTime>
+<comment>costo del viaje</comment>
+<commentInRDBMS>costo del viaje</commentInRDBMS>
+<generatorID>3D55210C-AB6E-7DF4-0E57-BCFEA3B270C4</generatorID>
+<ownerDesignName>taxixpress</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_create" id="D309C550-B5DC-FFF2-DC45-41484753EF04">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 06:29:27 UTC</createdTime>
+<generatorID>C3C7CD4A-3FB6-7319-FBEC-C757DCB9ECA4</generatorID>
+<ownerDesignName>taxixpress</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_update" id="FA761476-BF8F-14DC-8D8C-6267A61E36AA">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 06:29:27 UTC</createdTime>
+<generatorID>F7045274-A471-0D1C-A3E4-55A2D1B1F4EF</generatorID>
+<ownerDesignName>taxixpress</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="booking_time" id="41F18FA6-A232-089D-E0EE-C01C4C8ECF27">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 06:29:27 UTC</createdTime>
+<generatorID>DBA914F1-6EAF-32CB-BD72-137F3920E9BD</generatorID>
+<ownerDesignName>taxixpress</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22AE575D-2724-F155-D5BA-4B0768714046" name="travels_PK">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 06:29:27 UTC</createdTime>
+<generatorID>7CF6143A-7E3B-67C2-A636-BFD258D846C2</generatorID>
+<ownerDesignName>taxixpress</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F0903CC-38D6-54E6-C87A-FAF80943CF15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

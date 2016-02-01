@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EB1F573E-46A9-4C57-491A-7ADAA0997ECE" containerWithKeyObject="D2E93C09-4198-2497-CEC0-361DB53F5507" localFKIndex="11756E3B-B095-9481-41DB-99FD6DA60441" name="travels_assignments_fk">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 06:29:27 UTC</createdTime>
+<generatorID>B099FCB9-FFE8-FDEA-4E87-93DFB208AECD</generatorID>
+<ownerDesignName>taxixpress</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BD158862-EEC6-58CC-FD99-EF64DEB58D4D</referredTableID>
+<keyObject>22AE575D-2724-F155-D5BA-4B0768714046</keyObject>
+<referredKeyID>22AE575D-2724-F155-D5BA-4B0768714046</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
