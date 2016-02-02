@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="travels_assignments_fk" directorySegmentName="seg_0" id="B099FCB9-FFE8-FDEA-4E87-93DFB208AECD">
+<createdBy>Balox</createdBy>
+<createdTime>2016-02-01 06:03:22 UTC</createdTime>
+<ownerDesignName>taxixpress</ownerDesignName>
+<engineerTo>
+<item key="6F3FB4F7-8B36-4439-7A62-B35EC6CA0287" value="true"/>
+</engineerTo>
+<sourcePk>7CF6143A-7E3B-67C2-A636-BFD258D846C2</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>770F38DF-6D39-7793-EA0D-5B9465FF226E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E5947353-32B3-F43B-2CED-773CB6B4A72C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
