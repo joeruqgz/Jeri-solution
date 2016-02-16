@@ -1,23 +1,28 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Id taxi:</strong>
+  <%= @taxi.id_taxi %>
+</p>
+
+<p>
   <strong>Type taxi:</strong>
   <%= @taxi.type_taxi %>
 </p>
 
 <p>
-  <strong>Numbre seats:</strong>
-  <%= @taxi.numbre_seats %>
+  <strong>Number seats:</strong>
+  <%= @taxi.number_seats %>
 </p>
 
 <p>
-  <strong>Date create:</strong>
-  <%= @taxi.date_create %>
+  <strong>Id driver:</strong>
+  <%= @taxi.id_driver %>
 </p>
 
 <p>
-  <strong>Date update:</strong>
-  <%= @taxi.date_update %>
+  <strong>Status:</strong>
+  <%= @taxi.status %>
 </p>
 
 <%= link_to 'Edit', edit_taxi_path(@taxi) %> |

@@ -69,6 +69,6 @@ class TaxisController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def taxi_params
-      params.require(:taxi).permit(:type_taxi, :numbre_seats, :date_create, :date_update)
+      params.require(:taxi).permit(:id_taxi, :type_taxi, :number_seats, :id_driver, :status)
     end
 end

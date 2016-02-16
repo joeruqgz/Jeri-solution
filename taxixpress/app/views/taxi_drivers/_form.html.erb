@@ -1,0 +1,25 @@
+<%= form_for(@taxi_driver) do |f| %>
+  <% if @taxi_driver.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@taxi_driver.errors.count, "error") %> prohibited this taxi_driver from being saved:</h2>
+
+      <ul>
+      <% @taxi_driver.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_driver %><br>
+    <%= f.number_field :id_driver %>
+  </div>
+  <div class="field">
+    <%= f.label :id_user %><br>
+    <%= f.number_field :id_user %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

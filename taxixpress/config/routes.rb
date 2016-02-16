@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
   
+  resources :users
+  resources :travels
+  resources :taxis
+  resources :taxi_drivers
+  resources :ratings
+  resources :rates
+  resources :customers
+  resources :assignments
   get 'pages/index'
   get 'pages/about_us'
   get 'pages/faq'

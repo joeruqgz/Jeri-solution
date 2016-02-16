@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_travel: 1
+  location_start: MyString
+  des_location_start: MyString
+  location_end: MyString
+  des_location_end: MyString
+  type_pay: 1
+  cost: 9.99
+  booking_time: 2016-02-16 01:46:58
+
+two:
+  id_travel: 1
+  location_start: MyString
+  des_location_start: MyString
+  location_end: MyString
+  des_location_end: MyString
+  type_pay: 1
+  cost: 9.99
+  booking_time: 2016-02-16 01:46:58

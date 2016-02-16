@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_rate: 1
+  origin: MyString
+  destination: MyString
+  amount: 9.99
+
+two:
+  id_rate: 1
+  origin: MyString
+  destination: MyString
+  amount: 9.99

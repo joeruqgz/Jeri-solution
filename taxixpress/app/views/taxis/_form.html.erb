@@ -12,20 +12,24 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :id_taxi %><br>
+    <%= f.number_field :id_taxi %>
+  </div>
+  <div class="field">
     <%= f.label :type_taxi %><br>
-    <%= f.text_field :type_taxi %>
+    <%= f.number_field :type_taxi %>
   </div>
   <div class="field">
-    <%= f.label :numbre_seats %><br>
-    <%= f.text_field :numbre_seats %>
+    <%= f.label :number_seats %><br>
+    <%= f.number_field :number_seats %>
   </div>
   <div class="field">
-    <%= f.label :date_create %><br>
-    <%= f.date_select :date_create %>
+    <%= f.label :id_driver %><br>
+    <%= f.number_field :id_driver %>
   </div>
   <div class="field">
-    <%= f.label :date_update %><br>
-    <%= f.date_select :date_update %>
+    <%= f.label :status %><br>
+    <%= f.number_field :status %>
   </div>
   <div class="actions">
     <%= f.submit %>

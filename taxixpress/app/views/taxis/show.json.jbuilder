@@ -1,1 +1,1 @@
-json.extract! @taxi, :id, :type_taxi, :numbre_seats, :date_create, :date_update, :created_at, :updated_at
+json.extract! @taxi, :id, :id_taxi, :type_taxi, :number_seats, :id_driver, :status, :created_at, :updated_at

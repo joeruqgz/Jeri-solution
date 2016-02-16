@@ -1,0 +1,45 @@
+<%= form_for(@assignment) do |f| %>
+  <% if @assignment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@assignment.errors.count, "error") %> prohibited this assignment from being saved:</h2>
+
+      <ul>
+      <% @assignment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_assignment %><br>
+    <%= f.number_field :id_assignment %>
+  </div>
+  <div class="field">
+    <%= f.label :id_taxi %><br>
+    <%= f.number_field :id_taxi %>
+  </div>
+  <div class="field">
+    <%= f.label :id_travel %><br>
+    <%= f.number_field :id_travel %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.number_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :id_user_operator %><br>
+    <%= f.number_field :id_user_operator %>
+  </div>
+  <div class="field">
+    <%= f.label :id_customer %><br>
+    <%= f.number_field :id_customer %>
+  </div>
+  <div class="field">
+    <%= f.label :username %><br>
+    <%= f.text_field :username %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id travel:</strong>
+  <%= @travel.id_travel %>
+</p>
+
+<p>
+  <strong>Location start:</strong>
+  <%= @travel.location_start %>
+</p>
+
+<p>
+  <strong>Des location start:</strong>
+  <%= @travel.des_location_start %>
+</p>
+
+<p>
+  <strong>Location end:</strong>
+  <%= @travel.location_end %>
+</p>
+
+<p>
+  <strong>Des location end:</strong>
+  <%= @travel.des_location_end %>
+</p>
+
+<p>
+  <strong>Type pay:</strong>
+  <%= @travel.type_pay %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @travel.cost %>
+</p>
+
+<p>
+  <strong>Booking time:</strong>
+  <%= @travel.booking_time %>
+</p>
+
+<%= link_to 'Edit', edit_travel_path(@travel) %> |
+<%= link_to 'Back', travels_path %>

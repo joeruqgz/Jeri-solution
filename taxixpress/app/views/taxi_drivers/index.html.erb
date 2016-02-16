@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Taxi Drivers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id driver</th>
+      <th>Id user</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @taxi_drivers.each do |taxi_driver| %>
+      <tr>
+        <td><%= taxi_driver.id_driver %></td>
+        <td><%= taxi_driver.id_user %></td>
+        <td><%= link_to 'Show', taxi_driver %></td>
+        <td><%= link_to 'Edit', edit_taxi_driver_path(taxi_driver) %></td>
+        <td><%= link_to 'Destroy', taxi_driver, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Taxi driver', new_taxi_driver_path %>

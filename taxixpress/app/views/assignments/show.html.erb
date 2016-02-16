@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id assignment:</strong>
+  <%= @assignment.id_assignment %>
+</p>
+
+<p>
+  <strong>Id taxi:</strong>
+  <%= @assignment.id_taxi %>
+</p>
+
+<p>
+  <strong>Id travel:</strong>
+  <%= @assignment.id_travel %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @assignment.status %>
+</p>
+
+<p>
+  <strong>Id user operator:</strong>
+  <%= @assignment.id_user_operator %>
+</p>
+
+<p>
+  <strong>Id customer:</strong>
+  <%= @assignment.id_customer %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @assignment.username %>
+</p>
+
+<%= link_to 'Edit', edit_assignment_path(@assignment) %> |
+<%= link_to 'Back', assignments_path %>

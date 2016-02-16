@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_assignment: 1
+  id_taxi: 1
+  id_travel: 1
+  status: 1
+  id_user_operator: 1
+  id_customer: 1
+  username: MyString
+
+two:
+  id_assignment: 1
+  id_taxi: 1
+  id_travel: 1
+  status: 1
+  id_user_operator: 1
+  id_customer: 1
+  username: MyString

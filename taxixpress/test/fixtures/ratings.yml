@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_rating: 1
+  id_assignment: 1
+  value: 1
+  comment: MyString
+
+two:
+  id_rating: 1
+  id_assignment: 1
+  value: 1
+  comment: MyString
