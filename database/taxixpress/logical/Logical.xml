@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="2EBB8B95-8654-C845-285E-B70266C3F2CC" mainViewID="DF0065B1-4BB9-549A-3C82-0647FA8A9F6F">
-<createdBy>Balox</createdBy>
-<createdTime>2016-02-01 00:18:00 UTC</createdTime>
-<ownerDesignName>taxixpress</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</LogicalDesign>
