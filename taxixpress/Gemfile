@@ -52,3 +52,8 @@ gem 'less-rails'
 gem 'twitter-bootstrap-rails', '<= 3.2.0'
 
 gem 'frontend-generators'
+
+# Autenthication
+gem 'devise'
+gem 'rails_admin'
+gem 'simple_form'
