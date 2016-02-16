@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   
-=======
-  resources :profiles
->>>>>>> 31a394b7c525949f1b344210c7ae23ecb0770900
   get 'pages/index'
   get 'pages/about_us'
   get 'pages/faq'
