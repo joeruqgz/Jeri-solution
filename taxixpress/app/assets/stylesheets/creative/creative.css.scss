@@ -211,6 +211,13 @@ header .header-content .header-content-inner p {
     color: rgba(255,255,255,.7);
 }
 
+#video-background {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+
 @media(min-width:768px) {
     header {
         min-height: 100%;
