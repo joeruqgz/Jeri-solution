@@ -1,5 +1,6 @@
 class RatingsController < ApplicationController
   before_action :set_rating, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /ratings
   # GET /ratings.json

@@ -1,5 +1,6 @@
 class TaxiDriversController < ApplicationController
   before_action :set_taxi_driver, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!  
 
   # GET /taxi_drivers
   # GET /taxi_drivers.json

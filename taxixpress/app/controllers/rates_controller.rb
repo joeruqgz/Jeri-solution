@@ -1,5 +1,6 @@
 class RatesController < ApplicationController
   before_action :set_rate, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /rates
   # GET /rates.json
