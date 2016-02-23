@@ -2,20 +2,66 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Consultar Tarifa</h2>
+                <h2 class="section-heading">Consultar Tarifa y generar pedido para servicio</h2>
                 <hr class="light">
                 <p class="text-faded"></p>
                 
-                <%= form_tag("/search", method: "get", :class => 'form-horizontal denser') do %>
-                <div class="form-group control-group">
-                  <%= label_tag(:q, "Origen:", :class => 'col-sm-2 control-label') %>
-                  <div class="col-sm-10 controls">
-                      <%= collection_select(:rate, :id, Rate.all, :id, :name_rute, {include_blank: "Elige tu origen y destino"}, {:class => 'form-control'}) %>
-                  </div>
-                </div>
+                <%= form_for(@travel, :html => {class: 'form-horizontal denser'}) do |f| %>
+                  <% if @travel.errors.any? %>
+                    <div id="error_explanation">
+                      <h2><%= pluralize(@travel.errors.count, "error") %> prohibited this travel from being saved:</h2>
                 
-                  <%= submit_tag("Search", {:class => 'btn btn-default btn-xl'}) %>
+                      <ul>
+                      <% @travel.errors.full_messages.each do |message| %>
+                        <li><%= message %></li>
+                      <% end %>
+                      </ul>
+                    </div>
+                  <% end %>
+                        <%= f.hidden_field :cost %>
+                        <%= f.hidden_field :location_end %>                        
+                
+                    <div class="form-group control-group">
+                      <%= label_tag(:q, "Origen » Destino (Tarifa):", :class => 'col-sm-4 control-label') %>
+                      <div class="col-sm-8 controls">
+                          <%= collection_select(:rate, :id, Rate.all, :id, :name_rute, {include_blank: "Elige tu origen y destino"}, {:class => 'form-control'}) %>
+                      </div>
+                    </div>
+                
+                  <div class="form-group control-group">
+                    <%= f.label :des_location_start, 'Detalle origen:', :class => 'col-sm-4 control-label' %>
+                    <div class="col-sm-8 controls">
+                        <%= f.text_field :des_location_start, :class => 'form-control' %>
+                    </div>
+                  </div>
+
+                  <div class="form-group control-group">
+                    <%= f.label :des_location_end, 'Detalle destino:', :class => 'col-sm-4 control-label' %>
+                    <div class="col-sm-8 controls">
+                        <%= f.text_field :des_location_end, :class => 'form-control' %>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group control-group">
+                    <%= f.label :type_pay, 'Tipo de pago:', :class => 'col-sm-4 control-label' %>
+                    <div class="col-sm-8 controls" >
+                        <%= f.select(:type_pay, [["Elige tipo de pago", ""], "Efectivo", "Tarjeta"], {}, { :class => 'form-control input-sm' }) %>
+                    </div>
+
+                  </div>
+
+                  <div class="form-group control-group field">
+                    <%= f.label :booking_time, 'Tiempo de reserva:',  :class => 'col-sm-4 control-label' %>
+                    <div class="col-sm-8 controls" >
+                        <%= f.datetime_select :booking_time, { :order => [:month, :day], :prompt => { :day => 'Seleccionar día', :month => 'Seleccionar mes' } }, {:class => "form-control input-sm"} %>
+                    </div>
+                  </div>
+                  
+                  <div class="actions">
+                    <%= f.submit 'Generar', :class => 'btn btn-default btn-lx' %>
+                  </div>
                 <% end %>
+       
                 
                 <hr class="light">                
                 <a href="#" class="btn btn-default btn-xl">Ir al inicio!</a>
