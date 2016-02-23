@@ -4,6 +4,6 @@ class Rate < ActiveRecord::Base
     default_scope { order(origin: :asc) }
     
     def name_rute
-        "#{origin} » #{destination}"
+        "#{origin} » #{destination} (S/. #{amount})"
     end    
 end
